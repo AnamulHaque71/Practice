@@ -63,14 +63,15 @@ body{
     position: absolute; 
     right: 0;
     padding-right: 0px;
-    height: 800px;
-    width: 800px;
+    height: 650px;
+    width: 650px;
     object-fit: cover;
+    margin-right: 150px;
     z-index: 1; 
-    filter: drop-shadow(15px 15px 15px rgba(255, 0, 255, 0.658))
-            drop-shadow(15px -15px 15px rgba(0, 47, 255, 0.692))
-            drop-shadow(-15px -15px 15px rgb(0, 255, 221))
-            drop-shadow(-15px 15px 15px #d400ff9a);
+    filter: drop-shadow(15px 15px 50px rgba(255, 0, 255, 0.658))
+            drop-shadow(15px -15px 50px rgba(0, 47, 255, 0.692))
+            drop-shadow(-15px -15px 50px rgb(0, 255, 221))
+            drop-shadow(-15px 15px 50px #d400ff9a);
 
 }
 .home-content {
@@ -156,12 +157,49 @@ body{
         opacity: 1;
     }
 }
+@media screen and (max-width: 1500px) {
+    .home img {
+        margin-right: 50px;  
+    }
+    
+}
+@media screen and (max-width: 1200px) {
+    .home img {
+        margin-right: 50px;
+        height: 550px;
+        width: 550px;
+        opacity: .6;
+        
+    }
+    
+}
 @media screen and (max-width: 768px) {
     .home img {
-        
-        height: 800px;
-        width: 800px;
+        margin-right: 10px;
+        height: 500px;
+        width: 500px;
         opacity: .4;
     
     }
+    
+}
+@media screen and (max-width: 440px) {
+    .home img {
+        margin-right: 10px;
+        height: 400px;
+        width: 400px;
+        opacity: .4;
+    
+    }
+    
+}
+@media screen and (max-width: 390px) {
+    .home img {
+        margin-right: 0;
+        height: 350px;
+        width: 350px;
+        opacity: .4;
+    
+    }
+    
 }
